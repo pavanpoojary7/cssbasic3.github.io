@@ -1,0 +1,143 @@
+/* transform :translate :scale :rotate :skew */
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    
+}
+div:hover{
+    background-color: yellow;
+    transform: translateX(100px);
+}
+.one{
+    background-color: red;
+    transform: translateX(20px);
+    transform: scaleX(1.5);
+    transition: all 1s 2s;
+}
+.two{
+    background-color: black;
+    transform: translate(20px,200px);
+    transform: rotateZ(45deg);
+    transition-duration: 4s,2s;
+    transition-delay: 1s;
+}
+.three{
+    background-color: blue;
+    transform: translatey(50px);
+    transform: scaleX(0.5);
+    transform: skewX(20deg);
+    transition-property: background;
+    transition-duration: 5s;
+}
+.three:hover{
+border-radius: 50%;
+}
+
+.default{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: block;
+    margin: 15px;
+    transition: all 1s linear;
+}
+.ease{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: block;
+    margin: 15px;
+    transition: all 1s;
+    transition-timing-function: ease;
+}
+.linear{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: block;
+    margin: 15px;
+    transition: all 1s;
+    transition-timing-function: linear;
+}
+.ease-in{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: block;
+    margin: 15px;
+    transition: all 1s ;
+    transition-timing-function: ease-in;
+}
+.ease-out{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: block;
+    margin: 15px;
+    transition: all 1s ;
+    transition-timing-function: ease-out;
+}
+.ease-in-out{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    display: block;
+    margin: 15px;
+    transition: all 1s ;
+    transition-timing-function: ease-in-out;
+
+}
+.transition{
+    width : 200px;
+    height: 100px;
+    color: white;
+    margin: 10px;
+    display: block;
+    background-color: red;
+    transition: all 2s linear;
+}
+.transition:hover{
+    background-color: yellow;
+    transform: translateX(100px);
+}
+.animation{
+    width : 200px;
+    height: 100px;
+    color: white;
+    margin: 10px;
+    display: block;
+    background-color: blue;
+    /* animation-name: move; */
+    /* animation-duration: 10s; */
+    /* animation-iteration-count: infinite; */
+    animation: move 10s infinite;
+}
+@keyframes move{
+    0%{
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(100px);
+        background: green;
+        opacity: 0.25;
+    }
+    75%{
+        transform: translateX(-200px);
+        background-color: black;
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(20px);
+        background-color: brown;
+        opacity: 1;
+    }
+}
+

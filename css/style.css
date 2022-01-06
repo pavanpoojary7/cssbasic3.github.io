@@ -1,0 +1,140 @@
+div{
+    border: 3px solid red;
+    background-color: aqua;
+    margin: 40px;
+    text-align: right;
+    position: relative;
+}
+.relative{
+    background-color: brown;
+    text-align: left;
+    position: relative;
+    top:10px;
+    right:10%;
+}
+.fixed{
+    background-color: blueviolet;
+}
+.absolute{
+    background-color: green;
+    
+}
+span{
+background-color:orangered ;
+font-size: 20px;
+position: absolute;
+top:0;
+right: 0;
+}
+/* media queries */
+/* style elements on different screen sizes */
+body{
+background-color: yellow
+}
+.media{
+    background-color:blue ;
+}
+h1{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+@media screen and (min-width:576px){
+    body{
+        background-color: red;
+    }
+    .media{
+        background-color:chartreuse ;
+    }
+    h1{
+        color: black;
+        font-size: 60px;
+      
+       
+    }
+
+}
+@media screen and (min-width:768px){
+    body{
+        background-color:crimson;
+    }
+    .media{
+        background-color:chocolate ;
+    }
+    h1{
+        color: slateblue;
+        font-size: 60px;
+        font-family: 'Times New Roman', Times, serif;
+      
+       
+    }
+
+}
+/* z index */
+.index{
+    margin: 20px;
+    width: 80vw;
+    height: 70vh;
+    border: 5px solid red;
+    position: relative;
+}
+img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.one{
+    top 0;
+    left:0;
+    z-index: 0;
+}
+.two{
+    top: 10%;
+    left :10% ;
+    z-index:100;
+}
+.three{
+    top: 20%;
+    left: 20%;
+    z-index: 200;
+}
+/* pseudo elements */
+.psuedo::before{
+    content: "hello";
+    font-weight: bold;
+    font-size: 2rem;
+    color: red;
+}
+.psuedo::after{
+    content:"the end";
+    font-size: 2rem;
+    font-weight: bolder;
+    color: blue;
+}
+.letter::first-line{
+ font-size: 2rem;
+ color: blue;
+}
+.letter::first-letter{
+    font-weight: bold;
+    font-style: italic;
+}
+/* hover */
+.mouse:hover{
+    color: red;
+}
+a:hover{
+    text-decoration: none;
+    color: brown;
+}
+a:active{
+    color: green;
+}
+a:visited{
+    color:violet;
+}
+a:link{
+    color: red;
+}
+
